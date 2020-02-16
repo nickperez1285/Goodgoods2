@@ -37,8 +37,8 @@
 					</div>
 					<div class="lt" >
 						<textarea id = "user-offer" type="text" name="" rows="4" cols="40" placeholder= "input food description and amount available"></textarea><br>
-						<input id = 'item-cost' type="text" name="price" placeholder="value of donation" size = "42"><br>
-						<p>( Under the gov't ReFed program, max tax value of food is the lesser of  2 x cost or profit /2 ) </p>
+						<input id = 'item-cost' type="text" name="price" placeholder="base cost of donation" size = "42"><br>
+						<p>( **	Under the gov't ReFed program, max tax value of food is the lesser of  2 x cost or profit /2 ) </p>
 						<button id = "donBut" type= 'button' >DONATE</button>
 					</div>
 				</form>
@@ -47,7 +47,7 @@
 				<br>
 				<hr>
 				<div>
-					<center><h3>DONATION RECORDS</h3></center>
+					<center><h3>DONATION TAX RECORDS</h3></center>
 					<div id = 'btm'>
 						<table id = 'record'>
 							
@@ -56,31 +56,37 @@
 								<th>ITEMS </th>
 								<th>VALUE </th>
 							</tr>
+								<tr>
+								<td>2/13/20</td>
+								<td> 10 sacs of rice</td>
+								<td >60 </td>
+							</tr>
 							<tr>
 								<td>2/13/20</td>
 								<td> 10 buckets of chicken</td>
-								<td class = "val"> 100 </td>
+								<td class = "val">10	 </td>
 							</tr>
 							<tr>
 								<td>2/14/20</td>
 								<td> 4 plates of pasta</td>
-								<td class = "val"> 40 </td>
+								<td class = "val">40 </td>
 							</tr>
 							<tr>
 								<td>2/15/20</td>
 								<td style = "color:red" > 5 gallons of  cooking oil </td>
-								<td class = "val"> 10 </td>
+								<td class = "val">10 </td>
 							</tr>
 						</table>
 						<br>
 						<center>
 							<div id = 'btmRt'>
-							 <p><b>  TOTAL DONATIONS</b></p>
+							 <p><b>  TOTAL  TAX DEDUCTION </b></p>
 							<br>
-							<span id = "totalD">$<p id = 'totDont'>150</p></span>
+							<span id = "totalD">$<p id = 'totDont'> 110</p></span>
 							</div>
 							<br>
-							<a href="https://app.near.ai/app/6tzsh98j8/">Backup on Blockchain <br></b><img src="sync.png"><br> </a>
+							<a href="https://app.near.ai/app/6tzsh98j8/">Backup on Blockchain <br></b><img src="sync.png"> </a><br>
+							<a href="https://www.irs.gov/pub/irs-pdf/f1040sa.pdf">TAX FORM 1040 A</a>
 						</center>
 					</div>
 				</div>
@@ -90,7 +96,7 @@
 			<!-- ----------------- -->
 			<div class="columnRt">
 				<div id='map' class='map'></div>
-			</div>
+]			</div>
 		</div>
 	</body>
 	<script type="text/javascript" src="index.js"></script>

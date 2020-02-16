@@ -1,6 +1,6 @@
 ll = new tt.LngLat(-122.4149, 37.7736);
 var map = tt.map({
-		key: 'w1dnVx3TJ0Aq3QAfsnVCowI7sKoCWdwQ',
+		key: 'wbiWtsdGvwuDldQxwAYq2RpgrsdHGDSw',
 		container: 'map',
 		style: 'tomtom://vector/1/basic-main',
 		dragPan: !isMobileOrTablet(),
@@ -80,7 +80,7 @@ var button = document.getElementById('add-item')
 var offer = document.getElementById('offer')
 
 button.addEventListener("click" , function(){
-	var marker =  new tt.Marker()
+  var marker =  new tt.Marker()
 .setLngLat([long, lat])
 .addTo(map);
 
@@ -128,6 +128,8 @@ axios({
 }, (error) => {
   console.log(error);
 });
+
+
 
 
 //------ sum user donation array 

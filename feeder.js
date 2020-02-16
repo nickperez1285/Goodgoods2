@@ -21,7 +21,7 @@ but.addEventListener('click', () => {
    let totarr = []
 	let arr = Array.from(document.getElementsByClassName('val'))
 arr.forEach(i =>  totarr.push(parseInt(i.innerText)));
-totarr.reduce((a,b) => total = a +b );
+totarr.reduce((a,b) => total = a + (2*b) );
 totalDonation.innerText= total
 
 
