@@ -3,7 +3,7 @@ let totalDonation = document.getElementById('totDont')
 // ---   add user element
 var but = document.getElementById('donBut')
 var tab = document.getElementById('record')
-
+var uoffer = document.getElementById('user-offer')
 but.addEventListener('click', () => {
 	var row =  document.createElement('tr')
 	var dat = document.createElement('td')
@@ -29,12 +29,12 @@ totalDonation.innerText= total
 
 
 	var marker =  new tt.Marker()
-.setLngLat([-122.4221, 37.7501])
-.addTo(map);
+.setLngLat([long, lat])
+.addTo(map);;
 
 
 var p = new tt.Popup()
- .setHTML(user-offer.value)
+ .setHTML(uoffer.value)
 marker.setPopup(p)
 
 
