@@ -37,3 +37,23 @@ width:50%;
 
  	margin: 1em ;
  }
+
+ #btm{
+ 	
+ 	 width: 100%;
+ }
+
+ #record{
+ 	width: 75%;
+ }
+
+ #totalD{
+ 	display: inline;
+ 	color: green;
+ 	font-size:4em;
+
+ }
+
+#totDont{
+display: inline
+ }

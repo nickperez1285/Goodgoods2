@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html class='use-all-space'>		
-
-
+<html class='use-all-space'>
 	<head>
 		<title > DONATE</title>
 		<meta http-equiv='X-UA-Compatible' content='IE=Edge' />
@@ -18,12 +16,12 @@
 	</head>
 	<body >
 		<center>
-				<h1><u><a href="index.html">GOOD GOODS</a> </u></h1>
-				<h2>REGISTERED USER PAGE</h2>
-				</center>
+		<h1><a style = "text-decoration: none" href="index.html" >GOOD GOODS</a> </h1>
+		<h4>REGISTERED USER PAGE</h4>
+		</center>
 		<div class="row">
 			<div class="columnLt">
-				
+				<center>
 				<h3>Donate</h3>
 				<form id = "foodForm" action="">
 					
@@ -36,43 +34,55 @@
 						<label for="fuel"  style = "color: red"> Bio fuel stuffs</label><br><br>
 					</div>
 					<div class="lt" >
-						<textarea id = "offer" type="text" name="" rows="4" cols="60" placeholder= "input food description and amount available"></textarea><br>
-						<input id = 'item-cost' type="text" name="price" placeholder="value of donation(" size = "60"><br>
-						<p>( Under the gov't ReFed program, tax value of food is 2 x cost or profit /2 </p>
-						<button id = "add-item" type= 'button' >DONATE</button>
+						<textarea id = "user-offer" type="text" name="" rows="4" cols="60" placeholder= "input food description and amount available"></textarea><br>
+						<input id = 'item-cost' type="text" name="price" placeholder="value of donation" size = "62"><br>
+						<p>( Under the gov't ReFed program, max tax value of food is the lesser of  2 x cost or profit /2 ) </p>
+						<button id = "donBut" type= 'button' >DONATE</button>
 					</div>
 				</form>
+				</center>
 				<br>
 				<br>
-
 				<hr>
 				<div>
 					<center><h3>DONATION RECORDS</h3></center>
-					<table>
-						
-						<tr>
-							<th>DATE</th>
-							<th>ITEMS </th>
-							<th>VALUE </th>
-						</tr>
-						<tr>
-							<td>2/13/20</td>
-							<td> 10 buckets of chicken</td>
-							<td> $100 </td>
-						</tr>	
-						<tr>
-							<td>2/14/20</td>
-							<td> 4 plates of pasta</td>
-							<td> $40 </td>
-						</tr>
-						<tr>
-							<td>2/15/20</td>
-							<td> 5 gallons of  cooking oil </td>
-							<td> $5 </td>
-						</tr>
-					</table>
+					<div id = 'btm'>
+						<table id = 'record'>
+							
+							<tr>
+								<th>DATE</th>
+								<th>ITEMS </th>
+								<th>VALUE </th>
+							</tr>
+							<tr>
+								<td>2/13/20</td>
+								<td> 10 buckets of chicken</td>
+								<td class = "val"> 100 </td>
+							</tr>
+							<tr>
+								<td>2/14/20</td>
+								<td> 4 plates of pasta</td>
+								<td class = "val"> 40 </td>
+							</tr>
+							<tr>
+								<td>2/15/20</td>
+								<td style = "color:red" > 5 gallons of  cooking oil </td>
+								<td class = "val"> 10 </td>
+							</tr>
+						</table>
+						<br>
+						<center>
+							<div id = 'btmRt'>
+							 <p><b>  TOTAL DONATIONS</b></p>
+							<br>
+							<span id = "totalD">$<p id = 'totDont'>145</p></span>
+							</div>
+							<br>
+							<a href="https://app.near.ai/app/6tzsh98j8/"><img src="sync.png"><br>store on blockchain</a>
+						</center>
+					</div>
 				</div>
-		
+				
 			</div>
 			
 			<!-- ----------------- -->
@@ -82,5 +92,6 @@
 		</div>
 	</body>
 	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="feeder.js"></script>
 	
 </html>

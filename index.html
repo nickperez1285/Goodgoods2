@@ -13,7 +13,8 @@
 		<script src="https://api.tomtom.com/maps-sdk-for-web/5.x/5.45.0//examples/pages/examples/assets/js/mobile-or-tablet.js"></script>
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		
+			<script type="text/javascript" src="location.js"></script>
+
 	</head>
 	<body >
 		<center>
@@ -21,7 +22,7 @@
 		</center>
 		<div class="row">
 			<div class="columnLt">
-				
+				<center>
 				<h3>Donate</h3>
 				<form id = "foodForm" action="">
 					
@@ -34,19 +35,20 @@
 						<label for="fuel"  style = "color: red"> Bio fuel stuffs</label><br><br>
 					</div>
 					<div class="lt" >
-						<textarea id = "offer" type="text" name="" rows="4" cols="60" placeholder= "input food description and amount available"></textarea><br>
+						<textarea id = "offer" type="text" name="" rows="4" cols="60" placeholder= "input food description amount available location info and any other instructions "></textarea><br>
 						<button id = "add-item" type= 'button' >DONATE</button>
 					</div>
 				</form>
 				<br>
 				<hr>
 				<ul id ="Log" style = "list-style-type: none ; border: solid ">
-					<li>I left 2 pieces of Round Table pizza on the nearby table</li>
-					<li style="color: red"> 5 gallons of used cooking oil</li>
-					<li style="color: green"> 2 gargbage bags of misc table scraps</li>
-					<li style="color: black"> a whole cheeseburger and fries</li>
+					<li><i>Sun Feb 16 2020 01:03:19 GMT-0800 (Pacific Standard Time):</i>I left 2 pieces of Round Table pizza on the nearby table</li>
+					<li style="color: red"> <i>Sun Feb 16 2020 02:57:42 GMT-0800 (Pacific Standard Time): </i>5 gallons of used cooking oil available </li>
+					<li style="color: green"> <i>Sun Feb 16 2020 03:04:30 GMT-0800 (Pacific Standard Time): </i>2 gargbage bags of misc table scraps</li>
+					<li style="color: black"><i>Sun Feb 16 2020 04:03:30 GMT-0800 (Pacific Standard Time): </i> a whole cheeseburger and fries</li>
 				</ul>
-				push notifications . figure out hover event, show menu with prices on donator side . add tax break info look up reFed . add messaging  .add list of all inculdued  user and donator versions donator gets tax credits tax credits stored on blockchain donations can calculated by average cost per poind /meal based on donations use algorithims to determine what products are being over purchaed add timer to markers and show volume of food add location awareness through here a;o add futures. agroa for messaging and analyssi .
+			<img src="agora.png" width = 80%%>
+		</center>
 			</div>
 			
 			<!-- ----------------- -->
@@ -57,5 +59,5 @@
 		</div>
 	</body>
 	<script type="text/javascript" src="index.js"></script>
-	
+
 </html>

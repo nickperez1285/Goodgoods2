@@ -71,12 +71,13 @@ marker4.setPopup(popup4)
 // ----- add new item button input 
 
 
+
 var button = document.getElementById('add-item')
 var offer = document.getElementById('offer')
 
 button.addEventListener("click" , function(){
 	var marker =  new tt.Marker()
-.setLngLat([-122.4221, 37.7501])
+.setLngLat([long, lat])
 .addTo(map);
 
 
@@ -89,10 +90,11 @@ var log = document.getElementById('Log')
 var item = document.createElement('li')
 item.innerHTML = offer.value
 
-document.getElementById('green').checked ? (item.style.color = "green", marker._color = "green") : (item.style.color= "black")
+document.getElementById('green').checked ? (item.style.color = "green") : (item.style.color= "black")
 document.getElementById('red').checked ? (item.style.color = "red") : (item.style.color= "black")
 
-log.appendChild(item)
+
+log.append(new Date() + ':' + offer.value)
 
 })
 
@@ -125,5 +127,7 @@ axios({
 });
 
 
-//------
+//------ sum user donation array 
+
+//----
 

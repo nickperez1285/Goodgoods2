@@ -1,0 +1,9 @@
+
+            if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(position => {
+                    console.log(position.coords);
+                });
+            } else {
+                console.error("Geolocation is not supported by this browser!");
+            }
+     
