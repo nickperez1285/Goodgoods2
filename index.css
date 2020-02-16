@@ -13,3 +13,27 @@
 .map {
 	width:50%;
 }
+#foodForm{
+
+	display: inline-flex 
+	width: 10%;
+}
+
+.lt{ 
+	display: inline-flex 
+width:50%;
+/*flex:50%;*/
+ }
+
+ .rt{ 
+	display: inline-flex 
+
+width:50%;
+
+/*flex:50%;*/
+ }
+
+ #foodForm{
+
+ 	margin: 1em ;
+ }

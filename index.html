@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class='use-all-space'>
 	<head>
+		<title > Good Goods</title>
 		<meta http-equiv='X-UA-Compatible' content='IE=Edge' />
 		<meta charset='UTF-8'>
 		<title>Maps SDK for Web - Vector map</title>
@@ -11,30 +12,46 @@
 		<script src="https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.45.0/maps/maps-web.min.js"></script>
 		<script src="https://api.tomtom.com/maps-sdk-for-web/5.x/5.45.0//examples/pages/examples/assets/js/mobile-or-tablet.js"></script>
 		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 		
 	</head>
 	<body >
-		<title > here</title>
+		<center>
+		<h1><u>GOOD GOODS</u></h1>
+		</center>
 		<div class="row">
 			<div class="columnLt">
-				<center>
-					<h1><u>GOOD GOODS</u></h1>
-
-				</center>
-
-				<input id = "offer" type="text" name="" placeholder= "input food description" size= "50">
-				<button id = "add-item" type= 'button' >GO Good</button>
+				
+				<h3>Donate</h3>
+				<form id = "foodForm" action="">
+					
+					<div class = "rt">
+						<input type="checkbox" id="black" name="invdividual" value="invdividual" style = "color: black">
+						<label>Leftover Meal/s</label><br>
+						<input type="checkbox" id="green" name="mass" value="mass">
+						<label for="mass" style = "color: green"> Scraps for feed</label><br>
+						<input type="checkbox" id="red" name="fuel" value="Boat" >
+						<label for="fuel"  style = "color: red"> Bio fuel stuffs</label><br><br>
+					</div>
+					<div class="lt" >
+						<textarea id = "offer" type="text" name="" rows="4" cols="60" placeholder= "input food description and amount available"></textarea><br>
+						<button id = "add-item" type= 'button' >DONATE</button>
+					</div>
+				</form>
 				<br>
 				<hr>
-
-				shows markers for donation types , include legends and filters : food for the hungry, for bio fuel , for pet feed, user and donator versions donator gets tax credits tax credits stored on blockchain donations can calculated by average cost per poind /meal based on donations use algorithims to determine what products are being over purchaed add timer to markers and show volume of food add location awareness through here a;o add futures. agroa for messaging and analyssi 
-
-
-
+				<ul id ="Log" style = "list-style-type: none ; border: solid ">
+					<li>I left 2 pieces of Round Table pizza on the nearby table</li>
+					<li style="color: red"> 5 gallons of used cooking oil</li>
+					<li style="color: green"> 2 gargbage bags of misc table scraps</li>
+					<li style="color: black"> a whole cheeseburger and fries</li>
+				</ul>
+				push notifications . figure out hover event, show menu with prices on donator side . add tax break info look up reFed . add messaging  .add list of all inculdued  user and donator versions donator gets tax credits tax credits stored on blockchain donations can calculated by average cost per poind /meal based on donations use algorithims to determine what products are being over purchaed add timer to markers and show volume of food add location awareness through here a;o add futures. agroa for messaging and analyssi .
 			</div>
 			
 			<!-- ----------------- -->
 			<div class="columnRt">
+				<a href="feeder.html" style="float: right; padding-right: 2em">MY ACCOUNT</a><br>
 				<div id='map' class='map'></div>
 			</div>
 		</div>

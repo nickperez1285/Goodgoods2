@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class='use-all-space'>		
+
+
+	<head>
+		<title > DONATE</title>
+		<meta http-equiv='X-UA-Compatible' content='IE=Edge' />
+		<meta charset='UTF-8'>
+		<meta name='viewport'
+		content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'/>
+		<link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.45.0/maps/maps.css'>
+		<link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/5.x/5.45.0//examples/pages/examples/assets/ui-library/index.css'>
+		<script src="https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.45.0/maps/maps-web.min.js"></script>
+		<script src="https://api.tomtom.com/maps-sdk-for-web/5.x/5.45.0//examples/pages/examples/assets/js/mobile-or-tablet.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		
+	</head>
+	<body >
+		<center>
+				<h1><u><a href="index.html">GOOD GOODS</a> </u></h1>
+				<h2>REGISTERED USER PAGE</h2>
+				</center>
+		<div class="row">
+			<div class="columnLt">
+				
+				<h3>Donate</h3>
+				<form id = "foodForm" action="">
+					
+					<div class = "rt">
+						<input type="checkbox" id="invdividual" name="invdividual" value="invdividual" style = "color: black">
+						<label>Leftover Meal/s</label><br>
+						<input type="checkbox" id="mass" name="mass" value="mass">
+						<label for="mass" style = "color: green"> Scraps for feed</label><br>
+						<input type="checkbox" id="fuel" name="fuel" value="Boat" >
+						<label for="fuel"  style = "color: red"> Bio fuel stuffs</label><br><br>
+					</div>
+					<div class="lt" >
+						<textarea id = "offer" type="text" name="" rows="4" cols="60" placeholder= "input food description and amount available"></textarea><br>
+						<input id = 'item-cost' type="text" name="price" placeholder="value of donation(" size = "60"><br>
+						<p>( Under the gov't ReFed program, tax value of food is 2 x cost or profit /2 </p>
+						<button id = "add-item" type= 'button' >DONATE</button>
+					</div>
+				</form>
+				<br>
+				<br>
+
+				<hr>
+				<div>
+					<center><h3>DONATION RECORDS</h3></center>
+					<table>
+						
+						<tr>
+							<th>DATE</th>
+							<th>ITEMS </th>
+							<th>VALUE </th>
+						</tr>
+						<tr>
+							<td>2/13/20</td>
+							<td> 10 buckets of chicken</td>
+							<td> $100 </td>
+						</tr>	
+						<tr>
+							<td>2/14/20</td>
+							<td> 4 plates of pasta</td>
+							<td> $40 </td>
+						</tr>
+						<tr>
+							<td>2/15/20</td>
+							<td> 5 gallons of  cooking oil </td>
+							<td> $5 </td>
+						</tr>
+					</table>
+				</div>
+		
+			</div>
+			
+			<!-- ----------------- -->
+			<div class="columnRt">
+				<div id='map' class='map'></div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="index.js"></script>
+	
+</html>
