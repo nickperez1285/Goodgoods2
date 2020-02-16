@@ -4,7 +4,7 @@ var map = tt.map({
 		container: 'map',
 		style: 'tomtom://vector/1/basic-main',
 		dragPan: !isMobileOrTablet(),
-		zoom: 10,
+		zoom: 12,
 		center: ll
 });
 map.addControl(new tt.FullscreenControl());
@@ -53,6 +53,9 @@ var popupOffsets = {
   };
  var popup1 = new tt.Popup({offset: popupOffsets, className: 'my-class'})
  .setHTML("<p> a whole cheeseburger and fries  </p>")
+// check later
+
+
 
 var popup2  = new tt.Popup({offset: popupOffsets, className: 'my-class'})
  .setHTML("<p>I left 2 pieces of Round Table pizza  on the nearby table  </p>")
@@ -69,6 +72,7 @@ marker2.setPopup(popup2)
 marker3.setPopup(popup3)
 marker4.setPopup(popup4)
 // ----- add new item button input 
+
 
 
 
@@ -93,13 +97,12 @@ item.innerHTML = offer.value
 document.getElementById('green').checked ? (item.style.color = "green") : (item.style.color= "black")
 document.getElementById('red').checked ? (item.style.color = "red") : (item.style.color= "black")
 
-
-log.append(new Date() + ':' + offer.value)
+log.append(new Date())
+log.appendChild(item)
 
 })
 
 // ---  HERE api geo psosotioning   HOW TO get LIVE positioning?
-
 
 
 
